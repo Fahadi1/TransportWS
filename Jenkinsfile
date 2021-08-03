@@ -65,7 +65,7 @@ pipeline {
                             execCommand: '''
                                 cd /home/vagrant;
                                 sudo docker build -t bertromain/transportws:1.0 .; 
-                                sudo docker run -d --name ctransportws -p 8085:8085 bertromain/transportws:1.0;
+                                sudo docker run -d --name ctransportws -p 8086:8086 bertromain/transportws:1.0;
                             '''
                         )
                     ])
